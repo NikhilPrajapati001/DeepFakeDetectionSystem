@@ -1,0 +1,151 @@
+# DeepFake Detection System
+
+## 📌 Overview
+
+DeepFake Detection System is an AI-powered application designed to identify manipulated (fake) and authentic (real) images and videos using Deep Learning techniques. The system helps detect digitally altered media and provides prediction confidence scores for enhanced transparency.
+
+## 🚀 Features
+
+* Detects DeepFake Images
+* Detects DeepFake Videos
+* Real vs Fake Classification
+* Confidence Score Display
+* User-Friendly Web Interface
+* Frame-Based Video Analysis
+* Deep Learning-Based Detection Model
+* Fast and Accurate Predictions
+
+## 🛠️ Technologies Used
+
+* Python
+* TensorFlow / Keras
+* OpenCV
+* NumPy
+* Flask
+* HTML, CSS, JavaScript
+* MobileNetV2 (Transfer Learning)
+
+## 📂 Project Structure
+
+DeepFakeDetectionSystem/
+
+├── models/
+
+│ ├── deepfake_final_model.h5
+
+│ └── video_deepfake_model.h5
+
+├── static/
+
+├── templates/
+
+├── uploads/
+
+├── app.py
+
+├── requirements.txt
+
+└── README.md
+
+## 🧠 Model Information
+
+### Image Detection Model
+
+* Architecture: MobileNetV2
+* Input Size: 128 × 128
+* Binary Classification (Real / Fake)
+
+### Video Detection Model
+
+* Extracts frames from uploaded videos
+* Analyzes multiple frames
+* Aggregates frame predictions to generate final video classification
+
+## 📊 Dataset
+
+The model was trained using publicly available DeepFake datasets containing both real and manipulated images/videos.
+
+Image Dataset:
+
+* Real Images: 5,000+
+* Fake Images: 5,000+
+
+Video Dataset:
+
+* Real Videos: 590+
+* Fake Videos: 640+
+
+## ⚙️ Installation
+
+1. Clone the repository
+
+git clone [https://github.com/yourusername/DeepFakeDetectionSystem.git](https://github.com/yourusername/DeepFakeDetectionSystem.git)
+
+2. Install dependencies
+
+pip install -r requirements.txt
+
+3. Run the application
+
+python app.py
+
+4. Open in browser
+
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+## 📈 Future Improvements
+
+* Explainable AI (XAI) Visualization
+* Heatmap-Based Detection
+* Real-Time Webcam Detection
+* Improved Video Analysis
+* Cloud Deployment
+
+## 🎯 Applications
+
+* Social Media Verification
+* Digital Forensics
+* News Authentication
+* Cybersecurity
+* Media Integrity Verification
+
+## 👨‍💻 Author
+
+Aryan Kumar Pandey
+
+B.Tech (Computer Science & Engineering - Data Science)
+
+Maharishi University of Information Technology
+
+## 📜 License
+
+This project is developed for educational and research purposes.
+
+### Also add these files to GitHub:
+
+**requirements.txt**
+
+```txt
+tensorflow
+keras
+opencv-python
+numpy
+flask
+pillow
+scikit-learn
+matplotlib
+```
+
+**.gitignore**
+
+```txt
+__pycache__/
+*.pyc
+*.h5
+uploads/
+venv/
+.env
+.DS_Store
+```
+
+
